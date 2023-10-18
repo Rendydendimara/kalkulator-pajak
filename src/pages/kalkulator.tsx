@@ -4,6 +4,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { EnumCalculatorType } from "../enum";
 import KALKULATORPPH21PegawaiTetapPage from "../organims/KALKULATORPPH21PegawaiTetap";
 import KALKULATORPPH21GROSSUPPegawaiTetapPage from "../organims/KALKULATORPPH21GROSSUPPegawaiTetap";
+import KALKULATORUpahMingguanDanUpahSatuanPage from "../organims/KALKULATORUpahMingguanDanUpahSatuan";
 
 export default function KalkulatorPage() {
     const navigate = useNavigate();
@@ -30,6 +31,12 @@ export default function KalkulatorPage() {
             <KALKULATORPPH21GROSSUPPegawaiTetapPage />
         )
     }
+    if (calculatorType === EnumCalculatorType.KALKULATORUpahMingguanDanUpahSatuan) {
+        return (
+            <KALKULATORUpahMingguanDanUpahSatuanPage />
+        )
+    }
+
 
     return (
         <Box>

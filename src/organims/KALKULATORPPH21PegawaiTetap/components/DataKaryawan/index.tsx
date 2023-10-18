@@ -9,7 +9,7 @@ export default function DataKaryawan() {
 
     return (
         <Box>
-            <Heading as="h4" >DATA KARYAWAN</Heading>
+            <Heading as="h4" size="lg">DATA KARYAWAN</Heading>
             <Box mt="20px">
                 <VStack spacing="40px" justifyContent="flex-start" alignItems="flex-start" w="full">
                     <Box w="full" border="1px solid black" padding="2">
@@ -53,7 +53,7 @@ export default function DataKaryawan() {
                                 <LabelItem label="Penghasilan Tidak Kena Pajak" />
                                 <InputCustom borderColor="black" width="full" disabled _disabled={{
                                     backgroundColor: "#EEE"
-                                }} value={"5400000000"} />
+                                }} value={"54000000"} />
                             </FormControllCustom>
 
                         </VStack>

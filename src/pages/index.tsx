@@ -29,6 +29,7 @@ export default function IndexPage() {
                             <option ></option>
                             <option value={EnumCalculatorType.KALKULATORPPH21PegawaiTetap}>{EnumCalculatorType.KALKULATORPPH21PegawaiTetap}</option>
                             <option value={EnumCalculatorType.KALKULATORPPH21GROSSUPPegawaiTetap}>{EnumCalculatorType.KALKULATORPPH21GROSSUPPegawaiTetap}</option>
+                            <option value={EnumCalculatorType.KALKULATORUpahMingguanDanUpahSatuan}>{EnumCalculatorType.KALKULATORUpahMingguanDanUpahSatuan}</option>
                         </Select>
                     </FormControl>
                     <Text mt="30px">

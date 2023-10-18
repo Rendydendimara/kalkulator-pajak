@@ -7,7 +7,7 @@ export default function PerhitunganPPH21() {
 
     return (
         <Box>
-            <Heading as="h4" >PERHITUNGAN PPH21
+            <Heading as="h4" size="lg">PERHITUNGAN PPH21
             </Heading>
             <Box mt="20px">
                 <VStack spacing="40px" justifyContent="flex-start" alignItems="flex-start" w="full">

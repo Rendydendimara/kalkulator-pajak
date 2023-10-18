@@ -12,6 +12,7 @@ interface IProps {
   isTesting?: boolean
   disabled?: boolean;
   _disabled?: any;
+  type?: "number" | "price"
 }
 
 const InputCustom: React.FC<IProps> = (props) => {
@@ -38,6 +39,23 @@ const InputCustom: React.FC<IProps> = (props) => {
     } else {
       return toFormatPrice(props.value, 'IDR')
     }
+  }
+
+  if (props.type === 'number') {
+    return (
+      <Input
+        width={props?.width ?? 'full'}
+        isDisabled={props.disabled}
+        type="number"
+        _disabled={props._disabled}
+        borderColor={props?.borderColor ?? 'initial'}
+        autoComplete='new-password'
+        _hover={{}}
+        placeholder={props.placeholder ?? ''}
+        onChange={props.onChange}
+        value={props.value}
+      />
+    )
   }
 
   return (
