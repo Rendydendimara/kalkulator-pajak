@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { EnumCalculatorType } from "../enum";
 import KALKULATORPPH21PegawaiTetapPage from "../organims/KALKULATORPPH21PegawaiTetap";
+import KALKULATORPPH21GROSSUPPegawaiTetapPage from "../organims/KALKULATORPPH21GROSSUPPegawaiTetap";
 
 export default function KalkulatorPage() {
     const navigate = useNavigate();
@@ -19,9 +20,14 @@ export default function KalkulatorPage() {
         }
     }, [searchParams]);
 
-    if (calculatorType === EnumCalculatorType.KALKULATORPPH21GROSSUPPegawaiTetap) {
+    if (calculatorType === EnumCalculatorType.KALKULATORPPH21PegawaiTetap) {
         return (
             <KALKULATORPPH21PegawaiTetapPage />
+        )
+    }
+    if (calculatorType === EnumCalculatorType.KALKULATORPPH21GROSSUPPegawaiTetap) {
+        return (
+            <KALKULATORPPH21GROSSUPPegawaiTetapPage />
         )
     }
 

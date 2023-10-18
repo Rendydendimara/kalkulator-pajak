@@ -27,6 +27,7 @@ export default function IndexPage() {
                         <FormLabel>Tipe kalkulator</FormLabel>
                         <Select onChange={onChangeType} value={selectedCalculator}>
                             <option ></option>
+                            <option value={EnumCalculatorType.KALKULATORPPH21PegawaiTetap}>{EnumCalculatorType.KALKULATORPPH21PegawaiTetap}</option>
                             <option value={EnumCalculatorType.KALKULATORPPH21GROSSUPPegawaiTetap}>{EnumCalculatorType.KALKULATORPPH21GROSSUPPegawaiTetap}</option>
                         </Select>
                     </FormControl>
