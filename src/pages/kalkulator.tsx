@@ -5,6 +5,9 @@ import { EnumCalculatorType } from "../enum";
 import KALKULATORPPH21PegawaiTetapPage from "../organims/KALKULATORPPH21PegawaiTetap";
 import KALKULATORPPH21GROSSUPPegawaiTetapPage from "../organims/KALKULATORPPH21GROSSUPPegawaiTetap";
 import KALKULATORUpahMingguanDanUpahSatuanPage from "../organims/KALKULATORUpahMingguanDanUpahSatuan";
+import KALKULATORUpahBoronganPage from "../organims/KALKULATORUpahBorongan";
+import KALKULATORUpahHarianYangDibayarkanBulananPage from "../organims/KALKULATORUpahHarianYangDibayarkanBulanan";
+import KALKULATORPPH22Page from "../organims/KALKULATORPPH22";
 
 export default function KalkulatorPage() {
     const navigate = useNavigate();
@@ -36,6 +39,22 @@ export default function KalkulatorPage() {
             <KALKULATORUpahMingguanDanUpahSatuanPage />
         )
     }
+    if (calculatorType === EnumCalculatorType.KALKULATORUpahBorongan) {
+        return (
+            <KALKULATORUpahBoronganPage />
+        )
+    }
+    if (calculatorType === EnumCalculatorType.KALKULATORUpahHarianYangDibayarkanBulanan) {
+        return (
+            <KALKULATORUpahHarianYangDibayarkanBulananPage />
+        )
+    }
+    if (calculatorType === EnumCalculatorType.KALKULATORPPH22) {
+        return (
+            <KALKULATORPPH22Page />
+        )
+    }
+
 
 
     return (

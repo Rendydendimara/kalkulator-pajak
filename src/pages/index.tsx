@@ -30,6 +30,9 @@ export default function IndexPage() {
                             <option value={EnumCalculatorType.KALKULATORPPH21PegawaiTetap}>{EnumCalculatorType.KALKULATORPPH21PegawaiTetap}</option>
                             <option value={EnumCalculatorType.KALKULATORPPH21GROSSUPPegawaiTetap}>{EnumCalculatorType.KALKULATORPPH21GROSSUPPegawaiTetap}</option>
                             <option value={EnumCalculatorType.KALKULATORUpahMingguanDanUpahSatuan}>{EnumCalculatorType.KALKULATORUpahMingguanDanUpahSatuan}</option>
+                            <option value={EnumCalculatorType.KALKULATORUpahBorongan}>{EnumCalculatorType.KALKULATORUpahBorongan}</option>
+                            <option value={EnumCalculatorType.KALKULATORUpahHarianYangDibayarkanBulanan}>{EnumCalculatorType.KALKULATORUpahHarianYangDibayarkanBulanan}</option>
+                            <option value={EnumCalculatorType.KALKULATORPPH22}>{EnumCalculatorType.KALKULATORPPH22}</option>
                         </Select>
                     </FormControl>
                     <Text mt="30px">
